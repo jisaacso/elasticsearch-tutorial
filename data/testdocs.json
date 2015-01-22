@@ -1,0 +1,22 @@
+[
+    {
+	"author": "Joe",
+	"title": "The best book",
+	"content": "This book contains the most interesting content in the world. You have no idea..."
+    },
+    {
+	"author": "Greg",
+	"title": "The most scientific book",
+	"content": "This book contains all of the science previously known and forever yet undiscovered"
+    },
+    {
+	"author": "AG",
+	"title": "AG-test-123",
+	"content": "AG felt the best content for his book would be, simply AG"
+    },
+    {
+	"author": "Delroy",
+	"title": "On the art of semantic web",
+	"content": "To OWL or to RDF, that is the question."
+    }
+]

@@ -1,0 +1,33 @@
+{
+    "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 1,
+        "similarity.default.type": "BM25",
+	"index": {
+	    "analysis": {
+		"analyzer": {
+		    "full_name_analyzer": {
+			"type": "custom",
+			"tokenizer": "full_name_tokenizer",
+			"filter": ["lowercase"]
+		    }
+		},
+		"tokenizer": {
+		    "full_name_tokenizer": {
+			"type": "whitespace"
+		    }
+		}
+	    }
+	}
+	    
+    },
+    "mappings": {
+        "books": {
+            "properties": {
+		"author": {"type": "string", "index": "not_analyzed"},
+		"title": {"type": "string", "index": "not_analyzed"},
+		"content": {"type": "string", "analyzer": "full_name_analyzer"}
+            }
+        }
+    }
+}
